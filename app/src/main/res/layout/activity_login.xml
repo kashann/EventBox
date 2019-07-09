@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background_gradient"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/etLogInEmail"
+        android:hint="@string/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etLogInPassword"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/cbRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/rememberMe" />
+
+    <Button
+        android:id="@+id/btnAuthenticate"
+        android:background="@color/lightPink"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="authenticate"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:text="@string/logIn" />
+
+    <Button
+        android:id="@+id/btnLogInSignUp"
+        android:background="@color/lightPink"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="signUp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="@string/singUp" />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background">
+
+    <ImageView
+        android:id="@+id/ivWelcome"
+        android:layout_width="match_parent"
+        android:contentDescription="@string/welcome"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/welcome" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:onClick="logIn"
+        android:background="@mipmap/button"
+        android:text="@string/logIn" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textStyle="bold"
+        android:onClick="signUp"
+        android:background="@mipmap/button"
+        android:text="@string/singUp" />
+
+    <TextView
+        android:id="@+id/tvPoweredBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="30dp"
+        android:text="@string/poweredBy" />
+</LinearLayout>

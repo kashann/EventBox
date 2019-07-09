@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background_gradient"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnMyEvents"
+        android:background="@color/lightPink"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:onClick="myEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/myEvents" />
+
+    <Button
+        android:id="@+id/btnAddEvent"
+        android:background="@color/lightPink"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:onClick="addEvent"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addEvent" />
+
+    <Button
+        android:id="@+id/btnMyPartners"
+        android:background="@color/lightPink"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:onClick="myPartners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnToDo"
+        android:background="@color/lightPink"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:onClick="toDoList"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toDoList" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:background="@color/lightPink"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:onClick="logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout" />
+</LinearLayout>
